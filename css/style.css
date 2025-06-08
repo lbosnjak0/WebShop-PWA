@@ -1,0 +1,57 @@
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+header{
+    color: black;
+    text-align: center;
+    padding: 50px;
+}
+/*  Top Header  */
+.top-header{
+    text-align: left;
+}
+
+/*  Aside   */
+aside {
+  position: static;
+  top: 1rem;
+}
+
+img{
+  height: 200px;
+  width: 250px;
+}
+
+/*  Footer  */
+footer {
+  font-size: 15px;
+  background-color: white;
+  color: black;
+}
+
+/* Star rating */
+.rating {
+  direction: rtl;
+  font-size: 1.25rem;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  color: #ddd;
+  cursor: pointer;
+}
+
+.rating label.zero-star {
+  cursor: default;
+}
+
+.rating input:checked ~ label:not(.zero-star),
+.rating label:hover:not(.zero-star),
+.rating label:hover ~ label:not(.zero-star) {
+  color: #f0b400;
+}
+
